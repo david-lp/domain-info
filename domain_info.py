@@ -3,13 +3,13 @@ import requests
 import socket
 import whois
 
-#return http status code, IP address, and registered org. of given domains 
+#requires python-whois lib
+#returns http status code, IP address, registered org, and redirect destination of given domains 
 #usage "domain_info.py input_file > output_file"
 #input file must contain URLs in scheme://netloc format and seperated by line-break
 
 #would like to be able to pass -f for file argument or single domains, ie domain_info.py http://www.abc.com
 #would also be nice to just input domains as subdomain.domain.tld. Requests requires scheme, socket and whois do not
-#requires python-whois lib
 
 #HTTP Status codes 
 #2xx Success
